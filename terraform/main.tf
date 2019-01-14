@@ -26,7 +26,7 @@ resource "kubernetes_deployment" "tomcat" {
 
       spec {
         container {
-          image = "tomcat:8.5-assignment1"
+          image = "tomcat:8.5-a1"
           name = "tomcat"
           image_pull_policy = "IfNotPresent"
           port {
@@ -64,7 +64,7 @@ resource "kubernetes_deployment" "nginx" {
 
       spec {
         container {
-          image = "nginx:assignment1"
+          image = "nginx:a1"
           name = "nginx"
           image_pull_policy = "IfNotPresent"
           port {
