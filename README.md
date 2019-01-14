@@ -19,7 +19,7 @@ git clone https://github.com/xjulio/minikube-tomcat-nginx.git
 - Enter the repository directory and execute the run.sh script
 
 `
-cd minikube-tomcat-nginx && sh run.sh
+cd minikube-tomcat-nginx && sh build-and-deploy.sh
 `
 
 if the minikube is not running, then the script will start.
@@ -27,16 +27,16 @@ if the minikube is not running, then the script will start.
 This proccess will build the tomcat and nginx Docker images using Dockerfile manifest in **docker** directory and create deployment/services into k8s using kubectl command.
 
 ## How to execute using terraform
-The deployment can be done using terraform. Before execute terraform **plan** or **apply** commands, the docker images must be build, for this execute the **build.sh** script on **docker** directory:
+The deployment can be done using terraform. Before execute terraform **plan** or **apply** commands, the docker images must be build, for this execute the **build.sh** script:
 
 `
-cd docker && sh build.sh
+sh build.sh
 `
 
 Enter on terraform directory (assuming that you are in docker directory) and execute terraform **plan/apply** commands:
 
 `
-cd ../terraform
+cd terraform
 `
 
 To verify if everything it's OK:
