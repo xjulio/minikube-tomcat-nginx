@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: tomcat:8.5-assignment1
+        image: tomcat:8.5-a1
         imagePullPolicy: IfNotPresent
         ports:
           - name: http
