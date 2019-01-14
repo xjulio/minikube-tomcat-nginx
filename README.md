@@ -1,8 +1,12 @@
 # minikube-tomcat-nginx
 The project aim to demonstrate how to deploy tomcat and nginx servidor to kubernetes running on minikube. 
 
+Tomcat is running on k8s node port 8090. A demo application was deployed on /sample context.
+
+Nginx is running on k8s node port 8080.
+
 ## Requirements
-The minikube and kubect must be installed previously
+The minikube and kubect must be installed previously.
 
 ## How to execute using bash script
 
@@ -45,3 +49,17 @@ To create resources on k8s:
 `
 terraform apply
 `
+
+## Testing
+The tomcat and nginx was deployed on k8s using the NodePort, for this we must find the IP address of minikube node executing the following command:
+
+`
+minikube ip
+`
+
+The previous command will return the minikube IP, then open a browser and use the folling urls:
+
+Nginx: **http://MINIKUBE_IP:8080**
+
+Tomcat: **http://MINIKUBE_IP:8090** and **http://MINIKUBE_IP:8090/sample**
+
