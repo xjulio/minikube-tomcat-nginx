@@ -5,7 +5,7 @@ DIR=$(pwd)
 minikube status > /dev/null 2>&1
 
 if [ $? -ne 0 ]; then
-	minikube start
+   minikube start
 fi
 
 # Change docker context to connect docker client to minikube docker server
