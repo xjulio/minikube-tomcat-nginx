@@ -10,7 +10,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx:assignment1
+      - image: nginx:a1
         imagePullPolicy: IfNotPresent
         name: tomcat
         imagePullPolicy: IfNotPresent
