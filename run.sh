@@ -12,10 +12,10 @@ fi
 eval $(minikube docker-env)
 
 cd $DIR/docker
-#Build Tomcat custom image
+#Build tomcat custom image
 docker image build -t tomcat:8.5-a1 . -f tomcat.Dockerfile
 
-#Build Nginx custom image
+#Build nginx custom image
 docker image build -t nginx:a1 . -f nginx.Dockerfile
 
 cd $DIR
