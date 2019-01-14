@@ -59,7 +59,7 @@ minikube ip
 
 The previous command will return the minikube IP, then open a browser and use the folling urls:
 
-Nginx: **http://MINIKUBE_IP:8080**
+Nginx: http://MINIKUBE_IP:8080
 
-Tomcat: **http://MINIKUBE_IP:8090** and **http://MINIKUBE_IP:8090/sample**
+Tomcat: http://MINIKUBE_IP:8090 and http://MINIKUBE_IP:8090/sample
 
