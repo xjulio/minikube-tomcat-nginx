@@ -51,7 +51,7 @@ terraform apply
 `
 
 ## Testing
-The tomcat and nginx was deployed on k8s using the NodePort, for this we must find the IP address of minikube node executing the following command:
+The tomcat and nginx was deployed on k8s using the **hostPort**, for this we must find the IP address of minikube node executing the following command:
 
 `
 minikube ip
