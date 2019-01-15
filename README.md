@@ -26,7 +26,9 @@ if the minikube is not running, then the script will start.
 
 This proccess will build the tomcat and nginx Docker images using Dockerfile manifest in **docker** directory and create deployment/services into k8s using kubectl command.
 
-## How to execute using terraform
+## Terraform
+Terraform it's an Infrastructure as Code (IaC) tool, but only for demonstration purporse the deployment can be done by using it. The manifest are located on **terraform** folder.
+
 The deployment can be done using terraform. Before execute terraform **plan** or **apply** commands, the docker images must be build, for this execute the **build.sh** script:
 
 `
